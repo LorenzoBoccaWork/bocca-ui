@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "composite": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
@@ -16,6 +17,13 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@org/source"]
+    "customConditions": ["@org/source"],
+    "paths": {
+      "@bocca-ui/ui-button-kit": ["libs/ui-button-kit/src/index.ts"],
+      "@bocca-ui/ui-card-kit": ["libs/ui-card-kit/src/index.ts"],
+      "@bocca-ui/ui-modal-kit": ["libs/ui-modal-kit/src/index.ts"],
+      "@bocca-ui/ui-badge-kit": ["libs/ui-badge-kit/src/index.ts"],
+      "@bocca-ui/ui-input-kit": ["libs/ui-input-kit/src/index.ts"]
+    }
   }
 }
